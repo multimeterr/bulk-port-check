@@ -69,5 +69,16 @@ def send_email(sender = 'sernder@send.com',
     except Exception as e:
         print("Error: {0}".format(e))
         return False
-
+    #try:
+    #    session = smtplib.SMTP('smtp.gmail.com', 587)
+    #    session.starttls()
+    #    session.login(sender, 'password') 
+    #    session.sendmail(sender, recipient, msg.asString())
+    #    session.quit()
+    #    return True
+    #except Exception as e:
+    #    print("Error: {0}".format(e))
+    #    return False
+      
+      
 send_email()
